@@ -1,0 +1,9 @@
+targets:  
+  $default:  
+    builders:  
+      injectable_generator:injectable_builder:  
+        options:  
+          auto_register: true  
+          class_name_pattern:  
+            "DataSource$|Repository$|Cubit$"    
+          file_name_pattern: "_data_source$|_repository$|_cubit$"
